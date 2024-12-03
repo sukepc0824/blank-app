@@ -1,6 +1,11 @@
 import streamlit as st
+import pyperclip
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+st.title("🎈 AtCoder 標準入力受け取り")
+
+if st.button("N"):
+    pyperclip.copy("input()")
+#N = input()
+st.button("N,M")
+#N, M = map(int, input().split())
+st.button("A1 A2 A3...An")
